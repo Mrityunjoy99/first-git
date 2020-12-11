@@ -1,23 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Greet from './component/Greet'
+import Welcome from './component/Welcome'
+import Hello from './component/Hello'
+import StyleSheet from './component/Stylesheet'
+import inline from './component/inline';
+import './appStyles.css'
+import styles from './appStyles.module.css'
+import Form from './component/Form';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Form />
+      {/* <h1 className='error'>Error</h1>
+      <h1 className = {styles.success}>Success</h1> */}
+      {/* <Greet /> */}
+      {/* <Welcome /> */}
+      {/* <Hello name = 'Mrityunjoy' heroName="BatMan">
+        <p>This is the best</p>
+      </Hello>
+      <Hello name = 'Suman' heroName="SuperMan">
+        <button>Hero Time</button>
+      </Hello> */}
+      {/* <StyleSheet primary={true} /> */}
+      {/* <inline /> */}
     </div>
   );
 }
